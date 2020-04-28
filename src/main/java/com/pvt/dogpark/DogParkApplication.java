@@ -3,13 +3,14 @@ package com.pvt.dogpark;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-public class DogParkApplication { // extends WebSecurityConfigurerAdapter {
+public class DogParkApplication extends SpringBootServletInitializer { // extends WebSecurityConfigurerAdapter {
 
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(DogParkApplication.class);
