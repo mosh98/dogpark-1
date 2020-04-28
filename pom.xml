@@ -46,4 +46,11 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Internal repo</name>
+			<url>git@github.com/mattinberg/dogpark.git</url>
+		</repository>
+	</distributionManagement
 </project>
