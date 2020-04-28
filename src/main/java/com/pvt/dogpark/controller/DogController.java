@@ -18,6 +18,14 @@ import com.pvt.dogpark.service.DogService;
 @RequestMapping(path = "/dog")
 public class DogController {
 
+	/**
+	 * Format for calling stuff
+	 * /find?all är request-formatet
+	 * ex /find?id=10 , find?name=Abrahamsberg osv
+	 *
+	 * /find?latitude=xxxx&longitude=yyyy&distance=zzzzz
+	 * */
+
 	@Autowired
 	private DogService service;
 
